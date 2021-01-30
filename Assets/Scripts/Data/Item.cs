@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public enum ItemSize { Small, Normal, Big}
+public enum ItemSize { Small, Medium, Large}
 
 [CreateAssetMenu]
 public class Item : ScriptableObject

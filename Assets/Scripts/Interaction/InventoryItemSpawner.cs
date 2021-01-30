@@ -5,7 +5,10 @@ using UnityEngine;
 public class InventoryItemSpawner : MonoBehaviour
 {
     public static InventoryItemSpawner Instance;
-    public InteractableInvetoryItem inventoryItemPrefab;
+
+    public InteractableInvetoryItem inventorySmallItemPrefab;
+    public InteractableInvetoryItem inventoryMediumItemPrefab;
+    public InteractableInvetoryItem inventoryLargeItemPrefab;
 
     
 
@@ -19,10 +22,13 @@ public class InventoryItemSpawner : MonoBehaviour
 
     public InteractableInvetoryItem CreateItem(Item item, Vector3 position)
     {
-        InteractableInvetoryItem newItem = Instantiate(inventoryItemPrefab, position, Quaternion.identity);
+        InteractableInvetoryItem prefab = item.size == ItemSize.Small ? inventorySmallItemPrefab :
+            item.size == ItemSize.Medium ? inventoryMediumItemPrefab : inventoryLargeItemPrefab;
+
+        InteractableInvetoryItem newItem = Instantiate(prefab, position, Quaternion.identity);
         newItem.item = item;
 
-        //add image change etc...
+        newItem.SetCorrectSprite();
         newItem.name = "item_" + item.name;
         return newItem;
     }
