@@ -64,4 +64,14 @@ public class PlayerInventory : MonoBehaviour
     {
         return hand == Hand.Left ? leftHandItem : rightHandItem;
     }
+
+    public void RemoveItem(Hand hand)
+    {
+        if (hand == Hand.Right)
+            rightHandItem = null;
+        else
+            leftHandItem = null;
+
+        Debug.Log("Item removed " + hand);
+    }
 }
