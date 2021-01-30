@@ -4,8 +4,25 @@ public enum Hand { Right, Left }
 
 public class PlayerInventory : MonoBehaviour
 {
-    [SerializeField] private Item leftHandItem;
-    [SerializeField] private Item rightHandItem;
+    public Item leftHandItem;
+    public Item rightHandItem;
+
+    private void OnEnable()
+    {
+        InteractableInvetoryItem.ItemPicked += OnItemPicked;
+    }
+    private void OnDisable()
+    {
+        InteractableInvetoryItem.ItemPicked -= OnItemPicked;
+    }
+
+    private void OnItemPicked(Hand hand, Item item)
+    {
+        if (hand == Hand.Left)
+            leftHandItem = item;
+        else
+            rightHandItem = item;
+    }
 
     public bool AddItem(Hand hand, Item item)
     {
