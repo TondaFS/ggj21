@@ -11,4 +11,6 @@ public class NPC : ScriptableObject
 
     [Space(15)]
     public Item neededItem;
+    public Property okProperty;
+    public float okItemCooldown = 10;
 }

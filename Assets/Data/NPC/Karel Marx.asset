@@ -21,3 +21,5 @@ MonoBehaviour:
   lostItem: I have tried that book you brought me. It did not soothe at all. Try
     another one.
   neededItem: {fileID: 11400000, guid: 6efc36ab8df2d474792622d1eb0a2bf0, type: 2}
+  okProperty: {fileID: 11400000, guid: e273724e4d31a0f4d994ac9013a073f8, type: 2}
+  okItemCooldown: 10
