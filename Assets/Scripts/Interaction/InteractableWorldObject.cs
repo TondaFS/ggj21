@@ -4,6 +4,17 @@ using UnityEngine;
 public class InteractableWorldObject : InteractableObject
 {
     public InteractObject interactObject;
+    public GameObject replacement;
+
+    private void LateUpdate()
+    {
+        Transform parent = transform.parent;
+        transform.SetParent(null);
+        parent.transform.position = transform.position;
+        parent.transform.rotation = transform.rotation;
+        transform.SetParent(parent);
+    }
+
     public override void Interact(Hand hand, Item item)
     {
         Debug.Log("Interact with: " + item);
@@ -12,7 +23,7 @@ public class InteractableWorldObject : InteractableObject
             if (IsInteractableWithItem(interaction, item))
             {
                 Debug.Log("Its interactable: " + this.gameObject);
-                interaction.interactAction.Perform(this);
+                interaction.interactAction.Perform(this, PlayerInput.Instance.transform);
                 return;
             }
             else

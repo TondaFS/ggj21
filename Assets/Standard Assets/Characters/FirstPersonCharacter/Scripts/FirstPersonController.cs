@@ -42,6 +42,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+
+        public void ChangeJump()
+        {
+            m_Jump = true;
+        }
+
         // Use this for initialization
         private void Start()
         {
@@ -57,6 +63,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			m_MouseLook.Init(transform , m_Camera.transform);
         }
 
+        private bool changeJumpNextFrame = false;
 
         // Update is called once per frame
         private void Update()
@@ -65,8 +72,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
             {
-                m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+                //m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+                changeJumpNextFrame = true;
             }
+
+            if (changeJumpNextFrame)
+            {
+                m_Jump = false;
+                changeJumpNextFrame = false;
+            }
+                
 
             if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
             {
@@ -107,7 +122,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             m_MoveDir.x = desiredMove.x*speed;
             m_MoveDir.z = desiredMove.z*speed;
-
 
             if (m_CharacterController.isGrounded)
             {
