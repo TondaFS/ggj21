@@ -28,6 +28,7 @@ public class PlayerInput : MonoBehaviour
 
         HandleLeftMouseButton();
         HandleRightMouseButton();
+        HandleDropButtons();
     }
 
     private void CheckInteractableObject()
@@ -48,6 +49,24 @@ public class PlayerInput : MonoBehaviour
         {
             interactableObject = null;
         }
+    }
+
+    private void HandleDropButtons()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
+            DropItem(Hand.Left);
+        else if (Input.GetKeyDown(KeyCode.E))
+            DropItem(Hand.Right);
+    }
+
+    private void DropItem(Hand hand)
+    {
+        Item item = inventory.DropItem(hand);
+
+        if (item == null)
+            return;
+
+        InteractableInvetoryItem newItem = InventoryItemSpawner.Instance.CreateItem(item, (transform.position + transform.forward));       
     }
 
     private void HandleLeftMouseButton()
