@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b30ff3e73153af46ace2f1db8d169ee, type: 3}
   m_Name: TestObject
   m_EditorClassIdentifier: 
-  weaknesses:
-  - {fileID: 11400000, guid: e273724e4d31a0f4d994ac9013a073f8, type: 2}
+  interactions:
+  - desc: Sharp
+    interactsWith:
+    - {fileID: 11400000, guid: e273724e4d31a0f4d994ac9013a073f8, type: 2}
+    interactAction: {fileID: 11400000, guid: 6019cc4932cdf1d438e072270bc8c04f, type: 2}
