@@ -5,7 +5,7 @@ public class Destroy : InteractAction
 {
     public ParticleSystem particle;
 
-    public override void Perform(InteractableObject interactableObject)
+    public override void Perform(InteractableObject interactableObject, Transform player)
     {
         if (particle != null)
         {

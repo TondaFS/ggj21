@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
+    public static PlayerInput Instance;
+
     private PlayerInventory inventory;
-    [SerializeField] private InteractableObject interactableObject;
+    public InteractableObject interactableObject;
 
     [SerializeField] private float interactDistance = 3;
     [SerializeField] private float interactCheckDelay = 0.3f;
@@ -11,6 +13,11 @@ public class PlayerInput : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance == null)
+            Instance = this;
+        else if (Instance != this)
+            return;
+
         inventory = GetComponent<PlayerInventory>();
         lastTimeCheck = Time.time;
     }
@@ -33,6 +40,7 @@ public class PlayerInput : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, interactDistance, Layers.Mask.DetectInteractableObject ))
         {
+            //Debug.Log("HIT: " + hit.transform);
             interactableObject = hit.collider.gameObject.GetComponent<InteractableObject>();
             // Do something with the object that was hit by the raycast.
         }
