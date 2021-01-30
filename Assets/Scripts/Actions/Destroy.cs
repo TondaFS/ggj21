@@ -13,6 +13,6 @@ public class Destroy : InteractAction
             particleSys.transform.position = interactableObject.transform.position;
         }
 
-        Destroy(interactableObject.gameObject);
+        Destroy(interactableObject.transform.parent.gameObject);
     }
 }

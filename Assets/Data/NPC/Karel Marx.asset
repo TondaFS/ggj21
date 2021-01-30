@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0809e2dd2c6715c499bf8842f4cbbee3, type: 3}
+  m_Name: Karel Marx
+  m_EditorClassIdentifier: 
+  questStart: I need to clear my head. Some soothing words for the mind would help
+    me.
+  wrongItem: This cannot possibly sooth my mind!
+  okItem: Hmm. Let me take a look. This could possibly work?
+  goodItem: Ah this is precisely what I was looking for. Now to seize the means of
+    production.
+  lostItem: I have tried that book you brought me. It did not soothe at all. Try
+    another one.
+  neededItem: {fileID: 11400000, guid: 6efc36ab8df2d474792622d1eb0a2bf0, type: 2}
