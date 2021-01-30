@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0809e2dd2c6715c499bf8842f4cbbee3, type: 3}
+  m_Name: Cat Cop
+  m_EditorClassIdentifier: 
+  questStart: Stop right there, citizen! *rumble rumble* Ooooh my belly. Me hungee.
+  wrongItem: Is this some kind of joke, citizen? This can't help me. *rumble rumble*
+    me still hungee.
+  okItem: Om nom nom nom. You did OK citizen, but I feel I will soon be hungry again.
+  goodItem: Oooh. Fishi fishi for tiny gato? Weee. Me no longer hungee.
+  lostItem: As I predicted, citizen *rumble rumble* me hungee again.
+  neededItem: {fileID: 11400000, guid: d3a570498eebf78479047294b7652206, type: 2}
+  okProperty: {fileID: 11400000, guid: d8203dc07684ca8429a5c8536d27030d, type: 2}
+  okItemCooldown: 10

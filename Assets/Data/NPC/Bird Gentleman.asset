@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0809e2dd2c6715c499bf8842f4cbbee3, type: 3}
+  m_Name: Bird Gentleman
+  m_EditorClassIdentifier: 
+  questStart: Would you be so kind and help a troubled gentleman? I miss having the
+    addictive smoke in my lungs.
+  wrongItem: Pardon me, but this thing is neither addictive nor would deliver the
+    smoke to my lungs.
+  okItem: I suppose that this could help me start the process, but I need something
+    else as well.
+  goodItem: Yes. YES! You found it. Pipe is a perfect vessel for smoke delivery.
+    Now I can finally throw my vape away.
+  lostItem: I need some kind of smoke delivering vessel.
+  neededItem: {fileID: 11400000, guid: f0e14926d0846c3448beb3516f2aa213, type: 2}
+  okProperty: {fileID: 11400000, guid: 4f45eecf487166246ac8c17890ca5db4, type: 2}
+  okItemCooldown: 10

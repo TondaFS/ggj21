@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0809e2dd2c6715c499bf8842f4cbbee3, type: 3}
+  m_Name: Flower Man
+  m_EditorClassIdentifier: 
+  questStart: Well hello there, handsome. After the sand storm I seem to be a bit
+    dried out. Could you please bring me something refreshing?
+  wrongItem: Oh darling, this definitely won't do. I need something refreshing.
+  okItem: Welcome back, beautiful. What's this? Hmm I can certainly try it, that's
+    for sure. We'll see how refreshed I will feel.
+  goodItem: Oh you are my saviour, pour it all over me.
+  lostItem: I am so sorry, cutie, but that thing wasn't as refreshing as we hoped.
+  neededItem: {fileID: 11400000, guid: 538e4d68d22431f47962c093ea9b9d5a, type: 2}
+  okProperty: {fileID: 11400000, guid: 50da92e16998f2f48affaaeeac4bc9dc, type: 2}
+  okItemCooldown: 10

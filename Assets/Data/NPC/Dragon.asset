@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0809e2dd2c6715c499bf8842f4cbbee3, type: 3}
+  m_Name: Dragon
+  m_EditorClassIdentifier: 
+  questStart: When the storm came, it blew all the fire out of me.
+  wrongItem: This can't possible restore the fire in me.
+  okItem: I can try this. But I am not sure it is strong enough.
+  goodItem: This! This will make sure my fire never goes out again.
+  lostItem: I felt the fire come back for a short moment, but now it's gone again.
+  neededItem: {fileID: 11400000, guid: 47287d4ab1e919a4c8b08186e6e7d952, type: 2}
+  okProperty: {fileID: 11400000, guid: 4f45eecf487166246ac8c17890ca5db4, type: 2}
+  okItemCooldown: 10

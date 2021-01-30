@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0809e2dd2c6715c499bf8842f4cbbee3, type: 3}
+  m_Name: Tailor
+  m_EditorClassIdentifier: 
+  questStart: Welcome to my garments store. Sadly ever since the storm I don't have
+    any tools to cut fabrics with.
+  wrongItem: Thank you, but I have to decline this offer. This object is not useful
+    for cutting anything.
+  okItem: Let me see. Hmm, this may be useful. I will try it and let you know how
+    it went.
+  goodItem: Oh yes, scissors are obviously best for cutting fabrics. Thank you. Now
+    back to business.
+  lostItem: Welcome back to my garment store. I tried that sharp thing you brought
+    me and I have to say it didn't do the trick.
+  neededItem: {fileID: 11400000, guid: 146ea04b7ff0e9e4ea810abae0ac3ebf, type: 2}
+  okProperty: {fileID: 11400000, guid: e273724e4d31a0f4d994ac9013a073f8, type: 2}
+  okItemCooldown: 10

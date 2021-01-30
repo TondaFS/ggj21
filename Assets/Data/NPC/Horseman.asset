@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0809e2dd2c6715c499bf8842f4cbbee3, type: 3}
+  m_Name: Horseman
+  m_EditorClassIdentifier: 
+  questStart: I used to be cool. I need something to make me real cool with the fellas
+    again
+  wrongItem: This ain't gonna make me cool.
+  okItem: This will make me, like, 50% cooler. Guess it will have to do. But I am
+    sure there is something to push it to 100%.
+  goodItem: Whoah. This will make my coolness go up 100% for sure.
+  lostItem: That thing you gave me. It wasn't working. You need to push the coolness
+    factor up. I need to be the coolest.
+  neededItem: {fileID: 11400000, guid: fe2e6ef9c19f4e345910889cd8a7f381, type: 2}
+  okProperty: {fileID: 11400000, guid: 0ac24b4c07f6488438307a5d38888ffd, type: 2}
+  okItemCooldown: 10

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0809e2dd2c6715c499bf8842f4cbbee3, type: 3}
+  m_Name: Knight
+  m_EditorClassIdentifier: 
+  questStart: Hullo. It seems that I have lost a friend. If you happen to find someone
+    who looks like a friend, bring them to me.
+  wrongItem: Hullo. Sadly this doesn't look like it could be a friend to me.
+  okItem: Hullo. Though this is not my friend, I will take good care of them, because
+    they seem to need a friend.
+  goodItem: My friend. They are back with me. How I missed them. Thank you so much.
+    This is a good day.
+  lostItem: Hullo. I am still looking for my friend. If you find someone who looks
+    like a friend, bring them to me.
+  neededItem: {fileID: 11400000, guid: 46c45bb28d0562a49910ed225d5e537a, type: 2}
+  okProperty: {fileID: 11400000, guid: af6cdedea05933547b5b6a3fe4fdfd6f, type: 2}
+  okItemCooldown: 10

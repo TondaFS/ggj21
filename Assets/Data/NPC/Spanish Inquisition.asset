@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0809e2dd2c6715c499bf8842f4cbbee3, type: 3}
+  m_Name: Spanish Inquisition
+  m_EditorClassIdentifier: 
+  questStart: Our royal bottom will not sit on this firm chair. Our royal bottom
+    needs heavenly softness.
+  wrongItem: This doesn't look soft enough for our royal bottom.
+  okItem: We shall try and put this between our royal bottom and this chair. But
+    we doubt it will be soft enough.
+  goodItem: Oh heavens. This is it. This is the exactly right. Our royal bottom will
+    never feel sore ever again.
+  lostItem: We tried to sit on that thing you brought us. It wasn't soft enough for
+    our royal bottom.
+  neededItem: {fileID: 11400000, guid: c974efa7409e2f94587ebbe25d3fa09b, type: 2}
+  okProperty: {fileID: 11400000, guid: 3869f55f2fb738940aa4b7f0d99403f3, type: 2}
+  okItemCooldown: 10
