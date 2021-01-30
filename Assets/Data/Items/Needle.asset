@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   size: 0
   itemSprite: {fileID: 0}
+  interactionSound: {fileID: 0}
   properties:
   - {fileID: 11400000, guid: e273724e4d31a0f4d994ac9013a073f8, type: 2}
   - {fileID: 11400000, guid: 7c0cf1437cd8a2e4981b4651dc8761b2, type: 2}
+  - {fileID: 11400000, guid: 4f45eecf487166246ac8c17890ca5db4, type: 2}
