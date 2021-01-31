@@ -175,8 +175,11 @@ MonoBehaviour:
     BobAmount: 0.1
   m_StepInterval: 5
   m_FootstepSounds:
-  - {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
-  - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
+  - {fileID: 8300000, guid: 62234af0c11d74d42862e15d9ba2ddc6, type: 3}
+  - {fileID: 8300000, guid: f473e222e22b4d34f967f3d7af463d30, type: 3}
+  - {fileID: 8300000, guid: 6be818c6a4f29cc4bb615207ace4bf85, type: 3}
+  - {fileID: 8300000, guid: 17f896fb688dc7246894b4b30507743e, type: 3}
+  - {fileID: 8300000, guid: 96ff3fce7fff94e4699005168c5d7500, type: 3}
   m_JumpSound: {fileID: 0}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
 --- !u!54 &919553619884973232
