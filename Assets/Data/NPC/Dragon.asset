@@ -17,6 +17,7 @@ MonoBehaviour:
   okItem: I can try this. But I am not sure it is strong enough.
   goodItem: This! This will make sure my fire never goes out again.
   lostItem: I felt the fire come back for a short moment, but now it's gone again.
+  clip: {fileID: 8300000, guid: 3df2288c75a006e4081ea8e94bfa0437, type: 3}
   neededItem: {fileID: 11400000, guid: 47287d4ab1e919a4c8b08186e6e7d952, type: 2}
   okProperty: {fileID: 11400000, guid: 4f45eecf487166246ac8c17890ca5db4, type: 2}
   okItemCooldown: 10

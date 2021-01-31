@@ -41,6 +41,7 @@ public class InteractableNPC : InteractableObject
             return;
         }
 
+        AudioManager.Instance.PlaySound(data.clip);
         if (item == null)
         {
             switch (currentState) 

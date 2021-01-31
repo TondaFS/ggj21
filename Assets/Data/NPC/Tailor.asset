@@ -22,6 +22,7 @@ MonoBehaviour:
     back to business.
   lostItem: Welcome back to my garment store. I tried that sharp thing you brought
     me and I have to say it didn't do the trick.
+  clip: {fileID: 8300000, guid: da8f9f181c6e3c9449b4077e6431a029, type: 3}
   neededItem: {fileID: 11400000, guid: 146ea04b7ff0e9e4ea810abae0ac3ebf, type: 2}
   okProperty: {fileID: 11400000, guid: e273724e4d31a0f4d994ac9013a073f8, type: 2}
   okItemCooldown: 10

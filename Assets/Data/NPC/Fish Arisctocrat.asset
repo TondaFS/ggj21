@@ -20,6 +20,7 @@ MonoBehaviour:
     smell I have ever smelled.
   lostItem: Item you brought me was smelly, but I did not smell any passion from
     it.
+  clip: {fileID: 8300000, guid: f3acf3d7721085f429676ef6f4d01590, type: 3}
   neededItem: {fileID: 11400000, guid: 315310b69667f60418e9ca884aeaddda, type: 2}
   okProperty: {fileID: 11400000, guid: 7c0cf1437cd8a2e4981b4651dc8761b2, type: 2}
   okItemCooldown: 10

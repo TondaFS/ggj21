@@ -8,6 +8,7 @@ public class NPC : ScriptableObject
     public string okItem;
     public string goodItem;
     public string lostItem;
+    public AudioClip clip;
 
     [Space(15)]
     public Item neededItem;

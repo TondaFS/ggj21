@@ -14,4 +14,5 @@ public class Interaction
 public class InteractObject : ScriptableObject
 {
     public Interaction[] interactions;
+    public AudioClip clip;
 }
