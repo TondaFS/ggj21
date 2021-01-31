@@ -18,6 +18,8 @@ public class InteractableNPC : InteractableObject
     private PlayerInventory inventory;
     private bool gotItem = false;
 
+    public GameObject background;
+
     private void Awake()
     {
         currentState = NPCState.Quest;
@@ -25,6 +27,7 @@ public class InteractableNPC : InteractableObject
         meshPro.text = "";
         inventory = FindObjectOfType<PlayerInventory>();
         gotItem = false;
+        background.SetActive(false);
     }
 
     public override void Interact(Hand hand, Item item)
@@ -117,6 +120,7 @@ public class InteractableNPC : InteractableObject
         if (dialogueCoroutine != null)
             StopCoroutine(dialogueCoroutine);
 
+        background.SetActive(true);
         meshPro.text = text;
         dialogueCoroutine = StartCoroutine(DialogueCooldown());
     }
@@ -125,6 +129,7 @@ public class InteractableNPC : InteractableObject
     {
         yield return new WaitForSeconds(10);
         meshPro.text = "";
+        background.SetActive(false);
     }
 
     private void LateUpdate()
