@@ -17,3 +17,4 @@ MonoBehaviour:
   interactionSound: {fileID: 8300000, guid: 00b65648aaa7f1e45b268e76da550d30, type: 3}
   properties:
   - {fileID: 11400000, guid: 50da92e16998f2f48affaaeeac4bc9dc, type: 2}
+  isUnique: 1

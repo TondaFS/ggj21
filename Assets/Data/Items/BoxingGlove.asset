@@ -18,3 +18,4 @@ MonoBehaviour:
   properties:
   - {fileID: 11400000, guid: 064471b55dcafe0419488876bb2a09b0, type: 2}
   - {fileID: 11400000, guid: 0ac24b4c07f6488438307a5d38888ffd, type: 2}
+  isUnique: 0
