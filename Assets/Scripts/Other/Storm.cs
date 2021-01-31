@@ -28,7 +28,7 @@ public class Storm : MonoBehaviour
         else if (Instance != this)
             Destroy(this);
 
-        currentWaypoint = 1;
+        currentWaypoint = 0;
     }
 
     private void Update()
