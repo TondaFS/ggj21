@@ -95,8 +95,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.66, y: 3.22, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.66, y: 5, z: 0.2}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!114 &8918527400741735498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,3 +110,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 4c77f1910e47711498a6ba1a9c27ef4d, type: 2}
+  spawn: {fileID: 0}
+  canBeDestroyed: 0
