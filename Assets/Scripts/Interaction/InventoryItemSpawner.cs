@@ -72,6 +72,9 @@ public class InventoryItemSpawner : MonoBehaviour
             if (it == null)
                 break;
 
+            if (i >= allSpawns.Length)
+                break;
+
             ItemSpawn spawn = allSpawns[i];
             if (spawn == null)
                 break;
