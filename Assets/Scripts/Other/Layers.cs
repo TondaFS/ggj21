@@ -15,12 +15,12 @@ public class Layers : MonoBehaviour
     public const int InteractableObject = 6;
     public const int Player = 7;
     public const int PlayerBlocker = 8;
-
-
+    public const int Storm = 9;
+    public const int Spawn = 10;
 
     public static class Mask
     {
         public static int DetectInteractableObject = ~((1 << Default ) | (1 << TransparentFX) | (1 << IgnoreRaycast) | 
-            (1 << Water) | (1 << UI) | (1 << Player) | (1 << PlayerBlocker));
+            (1 << Water) | (1 << UI) | (1 << Player) | (1 << PlayerBlocker) | (1 << Storm) | (1 << Spawn));
     }
 }
