@@ -11,9 +11,7 @@ public class Storm : MonoBehaviour
     private int currentWaypoint = 0;
     public float targetDistance = 0.1f;
     public float rotationSpeed = 1;
-    
-    
-
+       
     private void Awake()
     {
         currentWaypoint = 1;
