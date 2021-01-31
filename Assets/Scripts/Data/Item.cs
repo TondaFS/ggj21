@@ -9,4 +9,5 @@ public class Item : ScriptableObject
     public Sprite itemSprite;
     public AudioClip interactionSound;
     public Property[] properties;
+    public bool isUnique;
 }

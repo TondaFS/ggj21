@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Key
   m_EditorClassIdentifier: 
   size: 0
-  itemSprite: {fileID: 0}
+  itemSprite: {fileID: 21300000, guid: 905e50ff10198ca4eb9e8c2ed4268a62, type: 3}
+  interactionSound: {fileID: 8300000, guid: f34d38ecec38333438683b588fce2563, type: 3}
   properties:
   - {fileID: 11400000, guid: c203aa93fa8d6f544ba755d0c09ccefa, type: 2}

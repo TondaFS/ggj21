@@ -66,7 +66,7 @@ public class PlayerInput : MonoBehaviour
         if (item == null)
             return;
 
-        InteractableInvetoryItem newItem = InventoryItemSpawner.Instance.CreateItem(item, (transform.position + transform.forward));       
+        InteractableInvetoryItem newItem = InventoryItemSpawner.Instance.CreateItem(item, (transform.position + transform.forward), null);       
     }
 
     private void HandleLeftMouseButton()
@@ -94,5 +94,5 @@ public class PlayerInput : MonoBehaviour
             }
         }
     }
-    
+
 }

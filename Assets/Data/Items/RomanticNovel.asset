@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0e68f28bacda75408a248f6b31619d4, type: 3}
   m_Name: RomanticNovel
   m_EditorClassIdentifier: 
-  size: 0
+  size: 1
   itemSprite: {fileID: 21300000, guid: a76e38c36a0fe494d9f5a5d0f0656e6c, type: 3}
+  interactionSound: {fileID: 8300000, guid: 506443a62fcd592478dcde914c9149cf, type: 3}
   properties:
   - {fileID: 11400000, guid: 65091544c94362c44b428e3a84773e20, type: 2}
   - {fileID: 11400000, guid: 7c0cf1437cd8a2e4981b4651dc8761b2, type: 2}
