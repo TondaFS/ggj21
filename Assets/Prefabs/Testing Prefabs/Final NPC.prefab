@@ -220,6 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: 3583d976e985be2498504dde2d7d28ee, type: 2}
   currentState: 0
+  background: {fileID: 8576249087625592643}
 --- !u!212 &980808487276437102
 SpriteRenderer:
   m_ObjectHideFlags: 0
