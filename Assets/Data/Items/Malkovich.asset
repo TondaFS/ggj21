@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0e68f28bacda75408a248f6b31619d4, type: 3}
   m_Name: Malkovich
   m_EditorClassIdentifier: 
-  size: 2
+  size: 0
   itemSprite: {fileID: 21300000, guid: e047055f3eed6ab48b0b85a68b6d8eb4, type: 3}
   interactionSound: {fileID: 8300000, guid: 752b8a8d5a8e4a34789c1b0171a70a2f, type: 3}
   properties:

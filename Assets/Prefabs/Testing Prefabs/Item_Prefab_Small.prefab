@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8918527400741735499}
   - component: {fileID: 8918527400741735498}
   m_Layer: 6
-  m_Name: Item_Prefab
+  m_Name: Item_Prefab_Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,8 +95,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.7600005, y: 4.1, z: 0.20000003}
-  m_Center: {x: 0.000015258789, y: 2.0499694, z: 0.000015258789}
+  m_Size: {x: 8.643011, y: 6.3710318, z: 0.20000003}
+  m_Center: {x: -0.059333146, y: 2.0341654, z: 0.000015255064}
 --- !u!114 &8918527400741735498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,3 +110,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 4c77f1910e47711498a6ba1a9c27ef4d, type: 2}
+  spawn: {fileID: 0}
+  canBeDestroyed: 0

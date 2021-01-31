@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0e68f28bacda75408a248f6b31619d4, type: 3}
   m_Name: Dog 1
   m_EditorClassIdentifier: 
-  size: 2
+  size: 0
   itemSprite: {fileID: 21300000, guid: d33e805c5b40dfd4ebcf61f8aa5e6cbc, type: 3}
   interactionSound: {fileID: 8300000, guid: 96dbf778bf799eb42a446f7c8afe914d, type: 3}
   properties:
