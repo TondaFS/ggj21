@@ -127,7 +127,13 @@ public class InteractableNPC : InteractableObject
 
     private void LateUpdate()
     {
-        meshPro.transform.LookAt(PlayerInput.Instance.transform);
-        meshPro.transform.Rotate(0, 180, 0);
+        var lookPos = PlayerInput.Instance.transform.position - transform.position;
+        lookPos.y = 0;
+        var rotation = Quaternion.LookRotation(lookPos);
+        transform.rotation = rotation;// Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 5);
+        transform.Rotate(0, 180, 0);
+
+       // transform.LookAt(PlayerInput.Instance.transform);
+        //meshPro.transform.Rotate(0, 180, 0);
     }
 }
