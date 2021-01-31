@@ -65,6 +65,7 @@ public class InteractableNPC : InteractableObject
             {
                 ShowText(data.goodItem);
                 currentState = NPCState.ItemGained;
+                Storm.Instance.RemoveHealth(InventoryItemSpawner.Instance.goodItemStormValue);
                 inventory.RemoveItem(hand);
                 gotItem = true;
                 return;
@@ -81,6 +82,7 @@ public class InteractableNPC : InteractableObject
                 ShowText(data.okItem);
                 currentState = NPCState.Cooldown;
                 StartCooldown();
+                Storm.Instance.RemoveHealth(InventoryItemSpawner.Instance.okItemStromValue);
                 inventory.RemoveItem(hand);
             }
             else
@@ -121,7 +123,7 @@ public class InteractableNPC : InteractableObject
 
     private IEnumerator DialogueCooldown()
     {
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(10);
         meshPro.text = "";
     }
 
