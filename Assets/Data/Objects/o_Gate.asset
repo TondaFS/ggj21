@@ -21,3 +21,4 @@ MonoBehaviour:
     interactsWith:
     - {fileID: 11400000, guid: c203aa93fa8d6f544ba755d0c09ccefa, type: 2}
     interactAction: {fileID: 11400000, guid: 6019cc4932cdf1d438e072270bc8c04f, type: 2}
+  clip: {fileID: 8300000, guid: 65bbd03f8836ada46b5ca6598b529b75, type: 3}
