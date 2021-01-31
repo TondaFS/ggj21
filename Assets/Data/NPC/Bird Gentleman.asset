@@ -21,6 +21,7 @@ MonoBehaviour:
   goodItem: Yes. YES! You found it. Pipe is a perfect vessel for smoke delivery.
     Now I can finally throw my vape away.
   lostItem: I need some kind of smoke delivering vessel.
+  clip: {fileID: 8300000, guid: 2da82858b70f4d24695c65f23179dcba, type: 3}
   neededItem: {fileID: 11400000, guid: f0e14926d0846c3448beb3516f2aa213, type: 2}
   okProperty: {fileID: 11400000, guid: 4f45eecf487166246ac8c17890ca5db4, type: 2}
   okItemCooldown: 10

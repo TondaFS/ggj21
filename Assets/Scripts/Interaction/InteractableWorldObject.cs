@@ -23,6 +23,8 @@ public class InteractableWorldObject : InteractableObject
             if (IsInteractableWithItem(interaction, item))
             {
                 Debug.Log("Its interactable: " + this.gameObject);
+                
+                AudioManager.Instance.PlaySound(interactObject.clip);
                 interaction.interactAction.Perform(this, PlayerInput.Instance.transform);
                 return;
             }

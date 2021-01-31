@@ -28,6 +28,10 @@ public class InventoryItemSpawner : MonoBehaviour
     private Queue<Item> itemQueue;
     public int duplicateCount = 3;
     public float waitForNewSpawn = 5;
+
+    [Header("Item values")]
+    public int goodItemStormValue = 15;
+    public int okItemStromValue = 5;
         
     private void Awake()
     {
@@ -66,6 +70,9 @@ public class InventoryItemSpawner : MonoBehaviour
         {
             Item it = itemQueue.Dequeue();
             if (it == null)
+                break;
+
+            if (i >= allSpawns.Length)
                 break;
 
             ItemSpawn spawn = allSpawns[i];
@@ -179,7 +186,10 @@ public class InventoryItemSpawner : MonoBehaviour
         InteractableInvetoryItem newItem = Instantiate(prefab, position, Quaternion.identity);
         newItem.item = item;
         newItem.spawn = spawn;
-        spawn.hasItem = true;
+
+        if (spawn != null)
+            spawn.hasItem = true;
+
         newItem.SetCorrectSprite();
         newItem.name = "item_" + item.name;
         return newItem;

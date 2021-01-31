@@ -20,6 +20,7 @@ MonoBehaviour:
   goodItem: Whoah. This will make my coolness go up 100% for sure.
   lostItem: That thing you gave me. It wasn't working. You need to push the coolness
     factor up. I need to be the coolest.
+  clip: {fileID: 8300000, guid: e67323d4bb10d9349a30431339764638, type: 3}
   neededItem: {fileID: 11400000, guid: fe2e6ef9c19f4e345910889cd8a7f381, type: 2}
   okProperty: {fileID: 11400000, guid: 0ac24b4c07f6488438307a5d38888ffd, type: 2}
   okItemCooldown: 10

@@ -19,6 +19,7 @@ MonoBehaviour:
     for sure. We'll see how refreshed I will feel.
   goodItem: Oh you are my saviour, pour it all over me.
   lostItem: I am so sorry, cutie, but that thing wasn't as refreshing as we hoped.
+  clip: {fileID: 8300000, guid: e8e438547fa4ce74cb6ad67f116d7b24, type: 3}
   neededItem: {fileID: 11400000, guid: 538e4d68d22431f47962c093ea9b9d5a, type: 2}
   okProperty: {fileID: 11400000, guid: 50da92e16998f2f48affaaeeac4bc9dc, type: 2}
   okItemCooldown: 10

@@ -18,6 +18,7 @@ MonoBehaviour:
   okItem: Om nom nom nom. You did OK citizen, but I feel I will soon be hungry again.
   goodItem: Oooh. Fishi fishi for tiny gato? Weee. Me no longer hungee.
   lostItem: As I predicted, citizen *rumble rumble* me hungee again.
+  clip: {fileID: 8300000, guid: a6b2647224ad0be4cae08584f0ae2dcd, type: 3}
   neededItem: {fileID: 11400000, guid: d3a570498eebf78479047294b7652206, type: 2}
   okProperty: {fileID: 11400000, guid: d8203dc07684ca8429a5c8536d27030d, type: 2}
   okItemCooldown: 10

@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Storm : MonoBehaviour
 {
+    public static Storm Instance;
+    public static event Action StormFinished;
+
     public Transform[] waypoints;
     public Transform playerSpawn;
 
@@ -11,10 +15,20 @@ public class Storm : MonoBehaviour
     private int currentWaypoint = 0;
     public float targetDistance = 0.1f;
     public float rotationSpeed = 1;
+
+    public float stormHealth = 100;
+
+    public int[] levelValues;
+    public float[] scaleValues;
        
     private void Awake()
     {
-        currentWaypoint = 1;
+        if (Instance == null)
+            Instance = this;
+        else if (Instance != this)
+            Destroy(this);
+
+        currentWaypoint = 0;
     }
 
     private void Update()
@@ -29,6 +43,26 @@ public class Storm : MonoBehaviour
         if (AmIClose())
             ChangeWaypoint();
     }
+
+    public void RemoveHealth(int amount)
+    {
+        stormHealth -= amount;
+
+        if (stormHealth <= 0)
+        {
+            //initiate end game
+            transform.root.gameObject.SetActive(false);
+            StormFinished?.Invoke();
+            return;
+        }
+
+        for (int i = 0; i < levelValues.Length; i++)
+        {
+            if (stormHealth <= levelValues[i])
+                transform.root.localScale = new Vector3(scaleValues[i], scaleValues[i], scaleValues[i]);
+        }
+    }
+
 
     private bool AmIClose()
     {

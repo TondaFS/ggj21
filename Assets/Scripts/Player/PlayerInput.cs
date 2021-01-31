@@ -66,7 +66,7 @@ public class PlayerInput : MonoBehaviour
         if (item == null)
             return;
 
-        InteractableInvetoryItem newItem = InventoryItemSpawner.Instance.CreateItem(item, (transform.position + transform.forward), null);       
+        InteractableInvetoryItem newItem = InventoryItemSpawner.Instance.CreateItem(item, (transform.position + transform.forward + Vector3.down * 0.75f), null);       
     }
 
     private void HandleLeftMouseButton()
@@ -74,6 +74,12 @@ public class PlayerInput : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             InvetoryUI.Instance.PlayeAnimation(Hand.Left);
+
+            if (inventory.leftHandItem == null)
+                AudioManager.Instance.PlaySlap();
+            else
+                AudioManager.Instance.PlaySound(inventory.leftHandItem.interactionSound);
+
             Debug.Log("Left Mouse Button!");
             if (interactableObject != null)
             {
@@ -87,6 +93,11 @@ public class PlayerInput : MonoBehaviour
         
         if (Input.GetMouseButtonDown(1))
         {
+            if (inventory.rightHandItem == null)
+                AudioManager.Instance.PlaySlap();
+            else
+                AudioManager.Instance.PlaySound(inventory.rightHandItem.interactionSound);
+
             InvetoryUI.Instance.PlayeAnimation(Hand.Right);
             Debug.Log("Right Mouse Button!");
             if (interactableObject != null)

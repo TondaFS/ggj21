@@ -17,6 +17,7 @@ MonoBehaviour:
   okItem: Malkovich? Malkovich malkovich...:(
   goodItem: MALKOVICH! :D Malkovich <3
   lostItem: Malkovich? Malkovich malkovich...:(
+  clip: {fileID: 8300000, guid: 851e126c8c999454a8fa5d277833cfef, type: 3}
   neededItem: {fileID: 11400000, guid: a401cba66a5fec44fafcf6402e742d1a, type: 2}
   okProperty: {fileID: 11400000, guid: 31951f0f188ab3c4380b7a20a3f36b9f, type: 2}
   okItemCooldown: 10

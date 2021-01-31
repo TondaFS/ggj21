@@ -21,6 +21,7 @@ MonoBehaviour:
     This is a good day.
   lostItem: Hullo. I am still looking for my friend. If you find someone who looks
     like a friend, bring them to me.
+  clip: {fileID: 8300000, guid: 3edfb093b60fdaf4caf85a3d1f47f57f, type: 3}
   neededItem: {fileID: 11400000, guid: 46c45bb28d0562a49910ed225d5e537a, type: 2}
   okProperty: {fileID: 11400000, guid: af6cdedea05933547b5b6a3fe4fdfd6f, type: 2}
   okItemCooldown: 10

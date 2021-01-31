@@ -18,10 +18,14 @@ public class InteractableInvetoryItem : InteractableObject
             return;
 
         ItemPicked?.Invoke(hand, this.item);
-        spawn.hasItem = false;
 
-        if (spawn.isInStorm && !spawn.isUnique)
-            InventoryItemSpawner.Instance.AddSpawnToStorm(spawn);
+        if (spawn != null)
+        {
+            spawn.hasItem = false;
+
+            if (spawn.isInStorm && !spawn.isUnique)
+                InventoryItemSpawner.Instance.AddSpawnToStorm(spawn);
+        }
 
         Destroy(this.gameObject);
     }
