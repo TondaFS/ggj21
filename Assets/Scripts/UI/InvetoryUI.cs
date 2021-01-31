@@ -1,29 +1,53 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 public class InvetoryUI : MonoBehaviour
 {
+    public static InvetoryUI Instance; 
+
     public PlayerInventory inventory;
-    public TextMeshProUGUI leftHand;
-    public TextMeshProUGUI rightHand;
+    public Image leftHand;
+    public Image rightHand;
+
+    public Animator lefthandAnimation;
+    public Animator rightHandAnimation;
 
     private void Awake()
     {
+        if (Instance == null)
+            Instance = this;
+        else if (Instance != this)
+            Destroy(this);
+
         inventory = FindObjectOfType<PlayerInventory>();
     }
 
     private void Update()
     {
         if (inventory.leftHandItem != null)
-            leftHand.text = inventory.leftHandItem.name;
+        {
+            leftHand.sprite = inventory.leftHandItem.itemSprite;
+            leftHand.gameObject.SetActive(true);
+        }            
         else
-            leftHand.text = "";
+            leftHand.gameObject.SetActive(false);
 
         if (inventory.rightHandItem != null)
-            rightHand.text = inventory.rightHandItem.name;
+        {
+            rightHand.sprite = inventory.rightHandItem.itemSprite;
+            rightHand.gameObject.SetActive(true);
+        }
         else
-            rightHand.text = "";
+            rightHand.gameObject.SetActive(false);
+    }
+
+    public void PlayeAnimation(Hand hand)
+    {
+        if (hand == Hand.Left)
+            lefthandAnimation.SetTrigger("Animation");
+        else
+            rightHandAnimation.SetTrigger("Animation");
     }
 }

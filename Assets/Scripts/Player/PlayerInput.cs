@@ -73,6 +73,7 @@ public class PlayerInput : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            InvetoryUI.Instance.PlayeAnimation(Hand.Left);
             Debug.Log("Left Mouse Button!");
             if (interactableObject != null)
             {
@@ -86,6 +87,7 @@ public class PlayerInput : MonoBehaviour
         
         if (Input.GetMouseButtonDown(1))
         {
+            InvetoryUI.Instance.PlayeAnimation(Hand.Right);
             Debug.Log("Right Mouse Button!");
             if (interactableObject != null)
             {
